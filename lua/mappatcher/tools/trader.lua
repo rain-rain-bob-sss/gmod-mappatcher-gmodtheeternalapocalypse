@@ -112,3 +112,4 @@ local spawntraders=function()
 end
 hook.Add("InitPostEntity","Mappatcher-TEA Trader IP spawn",spawntraders)
 hook.Add("PostCleanupMap","Mappatcher-TEA Trader CU spawn",spawntraders)
+hook.Add("SpawnTraders","Mappatcher-TEA Trader ST spawn",spawntraders)
