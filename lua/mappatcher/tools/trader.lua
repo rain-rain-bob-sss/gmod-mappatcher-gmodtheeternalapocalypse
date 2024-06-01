@@ -101,6 +101,7 @@ local spawntraders=function()
         end
         local pos=object:GetOrigin()
         local thisent = ents.Create( "trader" )--copyed from trader's spawn funtion
+		if(not thisent)then continue end
     		thisent:SetPos(pos)
     		thisent:SetAngles(Angle(0,object.ang, 0))
     		thisend:SetNetworkedString( "Owner", "World" )
